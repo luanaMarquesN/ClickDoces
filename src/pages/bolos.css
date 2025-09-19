@@ -1,0 +1,86 @@
+.bolos-page {
+ display: flex;               
+  flex-direction: column;        
+  justify-content: center;       
+  align-items: center;           
+  min-height: 100vh;             
+  padding: 20px;
+  background-color: #FCF7F2;   
+  box-sizing: border-box;
+  text-align: center;    
+}
+
+.bolos-page h1 {
+  text-align: center;
+  color: #497336; 
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card:hover .info {
+  transform: translateY(0);
+}
+
+.descricao {
+  font-size: 0.9rem;
+  color: #7B3F00;
+  margin: 5px 0;
+}
+
+.preco {
+  font-weight: bold;
+  color: #BF9341; 
+  margin-bottom: 10px;
+}
+
+.btn-comprar {
+  background-color: #497336; 
+  color: #FCF7F2; 
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #3e5a29; 
+}

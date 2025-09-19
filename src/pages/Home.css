@@ -1,0 +1,82 @@
+.home {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #FCF7F2; 
+  min-height: 100vh;         
+  box-sizing: border-box;
+  text-align: center;         
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #F9C0CB;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.banner .logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #497336; 
+  margin: 20px;
+}
+
+
+.categorias h2 {
+  color: #497336;  
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Grid de categorias */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px; /* espaço entre cards */
+}
+
+/* Card de categoria */
+.card {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #BF9341; /* dourado */
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+
